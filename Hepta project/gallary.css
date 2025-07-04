@@ -1,0 +1,117 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    body{
+      overflow-x: hidden;
+    }
+    /* Center the menu content */
+    #navbarToggleExternalContent {
+      text-align: center;
+      position: fixed;
+ 
+    }
+
+    /* Optional: center the nav links vertically and horizontally */
+    #navbarToggleExternalContent ul {
+      display: inline-block; /* inline-block to shrink to content */
+      text-align: left; /* align text inside the ul */
+    }
+    .navbar {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
+    .navbar-toggler.custom-toggler .navbar-toggler-icon {
+        display: none;
+        }
+
+        /* Add your own "X" icon when menu is open */
+        .navbar-toggler.custom-toggler::after {
+        content: '✕'; /* Cross icon */
+        color: black;
+        font-size: 1.5rem;
+        }
+        .navbar-nav{
+            /* font-size: 40px; */
+            font: 40px "Abril Fatface",times,serif;
+            
+        }
+       .navbar-nav .nav-link:hover {
+           color: #65C0BA !important;
+        }
+        .navbar-nav .nav-link.active {
+           color: #65C0BA !important;
+       }
+       #menuToggler{
+        margin-top: px;
+       }
+
+        #logo{
+            color: #ffffff;
+             font: 30px "Abril Fatface",times,serif;
+             padding: 0px 15px;
+             font-weight: bold;
+             
+        }
+
+    /* Hero section start */
+
+    #herosection{
+        height: 100vh;
+        background-image: linear-gradient(to right, rgba(4, 20, 36, 0.2), rgba(41, 44, 48, 0.2)), url("./images/slider-2.jpg");
+        background-size:cover;
+        background-position: center;
+    
+    } 
+   
+    .hero-content {
+        z-index: 5;
+     }
+
+     /* galary rooms section */
+
+     #destsection {
+        background-color: #f8f9fa;
+        width: 100%;      /* changed from 100vw */
+        min-height: 100vh; /* changed from fixed height */
+        overflow-x: hidden;
+    }
+
+   #destsection .col-12 p{
+     max-width: 700px;
+     margin: 0 auto;
+     line-height: 1,7;  
+     /* margin-top: 100px; */
+   }
+
+/* Footer section */
+
+#footersection{
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 54px 0px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+   #footersection .contact-card {
+    background-color: #000;
+    color: #fff;
+  }
+
+   #footersection .contact-card .list-group-item {
+    background-color: #000;
+    color: #fff;
+    border: none;
+  }
+
+  #footersection ul a{
+      text-decoration: none;
+      color: white;
+  }
+  #footersection ul li{
+    list-style-type: none;
+  }
